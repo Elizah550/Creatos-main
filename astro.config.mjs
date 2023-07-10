@@ -1,8 +1,19 @@
 import { defineConfig } from 'astro/config';
+import tailwind from '@astrojs/tailwind';
+import postcss from 'postcss';
 
-import tailwind from "@astrojs/tailwind";
-
-// https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind()]
+  integrations: [
+    tailwind(),
+    {
+      name: 'postcss', // Add the name property
+      // Use the "postcss" integration to configure PostCSS
+      // Add any necessary plugins to the "plugins" array
+      postcss: {
+        plugins: [
+          // Add your PostCSS plugins here if needed
+        ],
+      },
+    },
+  ],
 });
