@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "astro": "^1.1.5",
-    "postcss": "^8.4.25"
+    "postcss": "^8.4.25",
+    "react-scripts": "^5.0.1"
   },
   "devDependencies": {
     "@astrojs/tailwind": "^1.0.0",
